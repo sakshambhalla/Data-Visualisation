@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+</head>
+<body>
+<div>
+    <canvas id="mychart"></canvas>
+</div>
+<script>
+    let config = {
+      type:"radar",
+        data:{
+          labels:["Saksham"],
+            datasets:[
+                {
+                    label:"Intelligence",
+                    data:[100],
+                    pointBackgroundColor:'red'
+                },
+                {
+                    label:"Sexiness",
+                    data:[200],
+                    pointBackgroundColor:'red'
+
+                },
+                {
+                    label:"Sense of Humour",
+                    data:[400],
+                    pointBackgroundColor:'red'
+
+                }
+            ]
+        }
+    };
+
+    let chart = new Chart(document.getElementById('mychart').getContext('2d'), config);
+
+</script>
+</body>
+</html>

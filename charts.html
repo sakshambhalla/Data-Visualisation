@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>charts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+<div class="card" id="canvasContainer">
+    <canvas id="chartCanvas" onclick="displayData(event)"></canvas>
+
+</div>
+
+
+
+<div style="display:flex;">
+
+    <div class="card" style="width:35%;">
+        <h3 class="card-title">Measures</h3>
+        <div class="card-body" style="width:30%;">
+            <input type="checkbox" value="Intensity" checked="true" onclick="toggle(this)"><label>Intensity</label>
+            <input type="checkbox" value="Relevance" checked="true" onclick="toggle(this)"><label>Relevance</label>
+            <input type="checkbox" value="Likelihood" checked="true" onclick="toggle(this)"><label>Likelihood</label>
+        </div>
+    </div>
+
+
+    <div class="card" style="width:65%;" id="topicDetails">
+        <h3 class="card-title">Click on a Node</h3>
+    </div>
+
+
+</div>
+
+<div style="display:flex">
+        <div style="width:33%;" class="card">
+            <h3 class="card-title">Choose Label</h3>
+            <select id="labelList" onchange="createChart()">
+                <option value="topic">Topic</option>
+                <option value="sector">Sector</option>
+                <option value="region" selected="selected">Region</option>
+                <option value="pestle">Pestle</option>
+                <option value="end_year">Year</option>
+            </select>
+        </div>
+
+        <div class="card" style="width:33%;" id="subLabelList">
+            <h3 class="card-title">Choose SubLabel</h3>
+        </div>
+</div>
+
+</body>
+</html>
