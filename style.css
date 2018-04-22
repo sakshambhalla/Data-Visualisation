@@ -22,3 +22,11 @@ h3, h1{
         display:flex;
     }
 }
+
+@media (max-width:699px){
+
+    .card{
+        width:100%   !important;
+    }
+
+}
