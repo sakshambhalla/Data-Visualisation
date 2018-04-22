@@ -14,3 +14,11 @@ body{
 h3, h1{
     font-family: 'Gugi', cursive;
 }
+
+
+@media (min-width:700px){
+
+    .flexes{
+        display:flex;
+    }
+}
