@@ -27,9 +27,16 @@
     <div class="card" style="width:35%;">
         <h3 class="card-title">Measures</h3>
         <div class="card-body" style="width:30%;">
-            <input type="checkbox" value="Intensity" checked="true" onclick="toggle(this)"><label>Intensity</label>
-            <input type="checkbox" value="Relevance" checked="true" onclick="toggle(this)"><label>Relevance</label>
-            <input type="checkbox" value="Likelihood" checked="true" onclick="toggle(this)"><label>Likelihood</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Intensity" checked="true" onclick="toggle(this)"><label class="form-check-label">Intensity</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Relevance" checked="true" onclick="toggle(this)"><label class="form-check-label">Relevance</label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Likelihood" checked="true" onclick="toggle(this)"><label class="form-check-label">Likelihood</label>
+            </div>
+
         </div>
     </div>
 
